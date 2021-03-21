@@ -1,0 +1,10 @@
+totalDir=$(find ./* -maxdepth 0 -type d | wc -l)
+newDir=$((totalDir+1))
+dirname="os-"$newDir
+mkdir $dirname
+cp init/bochsrc $dirname/
+cp init/cmpl $dirname/
+cp init/boot_sect.asm $dirname/
+cd $dirname
+
+echo "created " $dirname

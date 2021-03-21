@@ -1,0 +1,8 @@
+source ~/.bashrc
+source /etc/environment
+file=$1
+out="${file%.*}".bin
+echo $file
+echo $out
+nasm $file -f bin -o $out
+bochs

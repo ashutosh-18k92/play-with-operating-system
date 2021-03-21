@@ -1,0 +1,5 @@
+megs: 32
+romimage: file=$BXSHARE/bios/BIOS-bochs-latest
+vgaromimage: file=$BXSHARE/bios/VGABIOS-lgpl-latest
+floppya: 1_44=boot_sect.bin, status=inserted
+boot: a
